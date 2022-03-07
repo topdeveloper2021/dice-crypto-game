@@ -1,0 +1,41 @@
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #001120;
+    height: 10vh;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 20%), 0 2px rgb(0 0 0 / 12%);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+}
+.logo img {
+    margin-right: 8px;
+    height: 10vmin;
+}
+.wallet-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3em;
+}
+.balance-btn {
+    width: 176px;
+    height: 50px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    outline-color: transparent;
+    outline-style: none;
+    cursor: pointer;
+    padding: 14px 10px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    background: #4e44ce;
+    border-radius: 6px; 
+    text-align: center;
+}

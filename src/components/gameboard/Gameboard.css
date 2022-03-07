@@ -1,0 +1,7 @@
+.game-board{
+    background-color: rgba(3, 31, 64, 0.3) !important;
+    width: 100%;
+    max-width: 80%;
+    max-height: 80%;
+    padding: 32px;
+}

@@ -1,0 +1,21 @@
+.row.my-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bet-btn {
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    margin: auto;
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+.bet-btn:hover {
+    box-shadow: 0 0 7px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}
+.bet-btn:active {
+    box-shadow: 0 0 15px 2px #933edfa8, inset 0 0 7px 2px #6e1cd9a8;
+}

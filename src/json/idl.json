@@ -1,0 +1,143 @@
+{
+    "version": "0.1.0",
+    "name": "dice",
+    "instructions": [
+      {
+        "name": "initialize",
+        "accounts": [
+          {
+            "name": "baseAccount",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "user",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "systemProgram",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": []
+      },
+      {
+        "name": "placeBet",
+        "accounts": [
+          {
+            "name": "baseAccount",
+            "isMut": true,
+            "isSigner": false
+          },
+          {
+            "name": "poolWallet",
+            "isMut": true,
+            "isSigner": false
+          },
+          {
+            "name": "companyWallet",
+            "isMut": true,
+            "isSigner": false
+          },
+          {
+            "name": "user",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "systemProgram",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": [
+          {
+            "name": "betAmount",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "compareBet",
+        "accounts": [
+          {
+            "name": "baseAccount",
+            "isMut": true,
+            "isSigner": false
+          },
+          {
+            "name": "companyWallet",
+            "isMut": true,
+            "isSigner": false
+          },
+          {
+            "name": "poolWallet",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "user",
+            "isMut": true,
+            "isSigner": false
+          },
+          {
+            "name": "systemProgram",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": []
+      }
+    ],
+    "accounts": [
+      {
+        "name": "BaseAccount",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "betAmount",
+              "type": "u64"
+            },
+            {
+              "name": "playerRand",
+              "type": "u64"
+            },
+            {
+              "name": "homeRand",
+              "type": "u64"
+            }
+          ]
+        }
+      },
+      {
+        "name": "PoolWallet",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "balance",
+              "type": "u64"
+            }
+          ]
+        }
+      },
+      {
+        "name": "CompanyWallet",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "balance",
+              "type": "u64"
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "address": "HFSPjHS3hovhXSVEZNNu4omKF6TYS91Jp9EWtYCkw5tq"
+    }
+  }
